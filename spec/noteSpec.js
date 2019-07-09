@@ -1,13 +1,13 @@
-  function testingNoteText() {
-    var note = new Note();
-    assert.isTrue(note.text = "My favourite language is Javascript");
-  };
-
-testingNoteText();
-
-function testingNoteNotes() {
+  function testNoteText() {
   var note = new Note();
-  assert.isTrue(note.notes() === note.text);
+  assert.isTrue(note.text = "My favourite language is Javascript");
 };
 
-testingNoteNotes();
+testNoteText();
+
+function testNoteNotes() {
+  var note = new Note();
+  assert.isTrue(note.content() === note.text);
+};
+
+testNoteNotes();
