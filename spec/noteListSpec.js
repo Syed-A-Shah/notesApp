@@ -4,3 +4,10 @@ function testNoteList() {
 };
 
 testNoteList();
+
+function testNoteListContent() {
+  var noteList = new NoteList();
+  assert.isTrue(noteList.currentNotes() === this.notes);
+};
+
+testNoteListContent();
