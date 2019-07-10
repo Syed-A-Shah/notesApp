@@ -4,7 +4,7 @@ function NoteList() {
 }
 
 NoteList.prototype.currentNotes = function() {
-  return this.notes
+  return this.notes;
 };
 
 NoteList.prototype.addNote = function(string) {
