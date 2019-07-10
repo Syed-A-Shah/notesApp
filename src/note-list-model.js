@@ -7,8 +7,8 @@ NoteList.prototype.currentNotes = function() {
   return this.notes;
 };
 
-NoteList.prototype.addNote = function(string) {
-  this.notes.push(string);
+NoteList.prototype.createNote = function(text) {
+  this.notes.push(new Note(text));
 };
 
   exports.NoteList = NoteList;

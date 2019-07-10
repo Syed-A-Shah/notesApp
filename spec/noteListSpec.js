@@ -12,11 +12,11 @@ function testNoteListContent() {
 
 testNoteListContent();
 
-function testNoteListAddNote() {
+function testNoteListCreateNote() {
   var noteList = new NoteList();
-  var string = "string";
-  noteList.addNote(string);
-  assert.isTrue(noteList.notes[0] === string, "TEST PASS: NoteList can push Note");
+  var text = "Testing Text";
+  noteList.createNote(text);
+  assert.isTrue(noteList.notes[0] === text, "TEST PASS: NoteList can push Note");
 };
 
-testNoteListAddNote();
+testNoteListCreateNote();
