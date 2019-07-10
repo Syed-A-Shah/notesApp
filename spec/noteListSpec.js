@@ -16,7 +16,7 @@ function testNoteListCreateNote() {
   var noteList = new NoteList();
   var text = "Testing Text";
   noteList.createNote(text);
-  assert.isTrue(noteList.notes[0] === text, "TEST PASS: NoteList can push Note");
+  assert.isTrue(noteList.notes[0].text === text, "TEST PASS: NoteList can push Note");
 };
 
 testNoteListCreateNote();
