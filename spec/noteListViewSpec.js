@@ -5,3 +5,12 @@ function testNoteListView() {
 }
 
 testNoteListView();
+
+
+function testEmptyDisplay() {
+  var noteList = new NoteList();
+  var noteListView =  new NoteListView(noteList);
+  assert.isTrue(noteListView.display() === `<ul></ul>`, "TEST PASS: Display method works with empty array")
+};
+
+testEmptyDisplay();

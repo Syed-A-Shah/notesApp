@@ -1,7 +1,7 @@
   function testNoteText() {
-  var text = "Hello there";
-  var note = new Note(text);
-  assert.isTrue(note.text = text, "TEST PASS: Note is instantiated with text");
+    var text = "Hello there";
+    var note = new Note(text);
+    assert.isTrue(note.text = text, "TEST PASS: Note is instantiated with text");
 };
 
 testNoteText();
